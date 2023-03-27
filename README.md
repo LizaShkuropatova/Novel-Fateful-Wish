@@ -1,1 +1,1 @@
-# Репозиторій гри-новели "Novel Elizabeth`s Fateful Wish"
+# Репозиторій гри-новели "Elizabeth`s Fateful Wish"
