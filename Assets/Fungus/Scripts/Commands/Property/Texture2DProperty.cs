@@ -28,8 +28,8 @@ namespace Fungus
             CalculatedMipmapLevel, 
             DesiredMipmapLevel, 
             LoadingMipmapLevel, 
-            LoadedMipmapLevel, 
-            AlphaIsTransparency, 
+            LoadedMipmapLevel,
+            AlphaIsTransparency,
         }
 
 

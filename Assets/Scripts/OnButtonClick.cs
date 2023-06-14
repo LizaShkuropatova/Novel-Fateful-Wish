@@ -12,6 +12,8 @@ public class OnButtonClick : MonoBehaviour
 
     public void LoadSceneAndExecuteBlock()
     {
+        SoundManager.Instance.StopMusic();
+
         //Загружаем сцену
         SceneManager.LoadScene(sceneName);
 

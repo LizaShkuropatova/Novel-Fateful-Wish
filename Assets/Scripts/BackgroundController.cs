@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackgroundController : MonoBehaviour
 {
-    public SpriteRenderer bgSpriteRenderer; //ссылка на компонент SpriteRenderer на вашем объекте BG
+    public SpriteRenderer bgSpriteRenderer; //ссылка на компонент SpriteRenderer на объекте BG
     public List<Sprite> bgSprites; //список спрайтов для фоновых картинок
 
     // Метод для смены фона

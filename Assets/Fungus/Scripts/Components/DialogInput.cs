@@ -3,6 +3,7 @@
 
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace Fungus
 {
@@ -37,6 +38,9 @@ namespace Fungus
 
         [Tooltip("Ignore input if a Menu dialog is currently active")]
         [SerializeField] protected bool ignoreMenuClicks = true;
+
+        [Tooltip("Ignore input if a Menu buttons is currently active")]
+        [SerializeField] protected bool ignoreButtonClicks = true;
 
         protected bool dialogClickedFlag;
 
@@ -123,6 +127,17 @@ namespace Fungus
                 if (MenuDialog.ActiveMenuDialog != null && 
                     MenuDialog.ActiveMenuDialog.IsActive() &&
                     MenuDialog.ActiveMenuDialog.DisplayedOptionsCount > 0)
+                {
+                    dialogClickedFlag = false;
+                    nextLineInputFlag = false;
+                }
+            }
+
+            if (ignoreButtonClicks)
+            {
+                // Ignore input events if a ButtonClicks is being displayed
+                if (Input.GetMouseButtonDown(0) && EventSystem.current.currentSelectedGameObject != null &&
+                    EventSystem.current.GetComponent<Button>())
                 {
                     dialogClickedFlag = false;
                     nextLineInputFlag = false;
