@@ -87,3 +87,6 @@
 
 https://trello.com/b/bgiw5pWx/novel-elizabeth-s-fateful-wish
 
+## Miro Whiteboard for Visual Collaboration:
+
+https://miro.com/app/board/uXjVMVdpgNM=/?share_link_id=398044253857
